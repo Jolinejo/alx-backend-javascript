@@ -12,6 +12,14 @@ export default class Currency {
     return this._name;
   }
 
+  set code(code) {
+    this._code = code;
+  }
+
+  get code() {
+    return this._code;
+  }
+
   displayFullCurrency() {
     const x = `${this._name} (${this._code})`;
     return x;
