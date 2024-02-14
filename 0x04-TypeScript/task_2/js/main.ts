@@ -51,3 +51,16 @@ createEmployee = function (salary: string | number) {
     return new Director
 }
 
+interface Iwork {
+    (empployee: Teacher | Director): string;
+}
+
+function isDirector(variable: any): variable is Director { 
+    return (typeof variable === 'object' && 'workDirectorTasks' in variable); 
+} 
+let executeWork: Iwork;
+executeWork = function (empployee: Teacher | Director) {
+    if (isDirector(empployee))
+        return empployee.workDirectorTasks();
+    return empployee.workTeacherTasks();
+}
