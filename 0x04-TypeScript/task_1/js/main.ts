@@ -5,3 +5,6 @@ interface Teacher extends Record<string, any> {
     yearsOfExperience?: number;
     location: string;
 }
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
