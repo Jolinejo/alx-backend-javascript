@@ -1,5 +1,5 @@
 // read file
-const fs = require('node:fs/promises');
+const fs = require('fs').promises;
 
 async function countStudents(path) {
   return new Promise((resolve, reject) => {
