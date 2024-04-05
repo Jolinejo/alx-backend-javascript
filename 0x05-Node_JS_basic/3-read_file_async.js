@@ -1,4 +1,4 @@
-// read file
+// read file please
 const fs = require('node:fs/promises');
 
 async function countStudents(path) {
