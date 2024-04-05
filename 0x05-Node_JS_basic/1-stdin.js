@@ -1,4 +1,3 @@
-/* eslint-disable jest/require-hook */
 // 1-stdin.js
 
 console.log('Welcome to Holberton School, what is your name?');
